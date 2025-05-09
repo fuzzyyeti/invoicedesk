@@ -6,15 +6,24 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="SubscriptionDashboard.Views.SettingsDialog"
         x:DataType="viewModels:SettingsViewModel"
+        Width="660"
         Height="220"
         Title="Configuration">
     <DockPanel>
-        <UniformGrid DockPanel.Dock="Top" Rows="2">
-            <TextBlock HorizontalAlignment="Left" Margin="15" Text="Data API URL" />
-            <TextBox HorizontalAlignment="Left" Margin="15" Text="{Binding ApiUrl}" />
-            <TextBlock HorizontalAlignment="Left" Margin="15" Text="Validator Contacts Path" />
-            <TextBox HorizontalAlignment="Left" Margin="15" Text="{Binding ValidatorContacts}" />
-        </UniformGrid>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Column="0">
+                <TextBlock Padding="7.5" HorizontalAlignment="Left" Margin="15" Text="Data API URL" />
+                <TextBlock Padding="7.5" HorizontalAlignment="Left" Margin="15" Text="Validator Contacts Path" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Column="1">
+                <TextBox  HorizontalAlignment="Stretch" Margin="15" Text="{Binding ApiUrl}" />
+                <TextBox  HorizontalAlignment="Stretch" Margin="15" Text="{Binding ValidatorContacts}" />
+            </StackPanel>
+        </Grid>
         <StackPanel DockPanel.Dock="Bottom" VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal">
             <Button Margin="5" Command="{Binding CloseCommand}">Cancel</Button>
             <Button Margin="5" Command="{Binding UpdateConfiuration}">Apply</Button>
