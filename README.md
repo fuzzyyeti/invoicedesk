@@ -39,8 +39,8 @@ This is a tool built for internal use. There's no web front end, just a fast, se
 Clone the repo and run the app:
 
 ```bash
-git clone https://github.com/fuzzyyti/invoicedesk.git
-cd invoicedesk
+git clone git@github.com:fuzzyyeti/invoicedesk.git
+cd invoicedesk/SubscriptionDashboard
 dotnet run
 ```
 
@@ -48,8 +48,8 @@ To publish a standalone build:
 
 ```bash
 dotnet publish -c Release -r win-x64 --self-contained
-You can swap win-x64 for osx-arm64 or linux-x64 as needed.
 ```
+You can swap win-x64 for osx-arm64 or linux-x64 as needed.
 
 License
 MIT
