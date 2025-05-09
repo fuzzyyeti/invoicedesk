@@ -1,0 +1,48 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:FluentAvalonia.UI.Controls;assembly=FluentAvalonia"
+             xmlns:viewModels="clr-namespace:SubscriptionDashboard.ViewModels"
+             xmlns:views="clr-namespace:SubscriptionDashboard.Views"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:DataType="viewModels:ValidatorViewModel"
+             x:Class="SubscriptionDashboard.Views.ValidatorCopyContact">
+    <UserControl.Styles>
+        <Style Selector="TextBlock.CopyTarget">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontFamily" Value="{StaticResource RobotoFont}"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style Selector="TextBlock.Label">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontFamily" Value="{StaticResource RobotoFont}"/>
+        </Style>
+    </UserControl.Styles>
+    <Border Margin="20">
+        <Interaction.Behaviors>
+            <EventTriggerBehavior EventName="PointerPressed">
+                <InvokeCommandAction Command="{Binding CopyCommand}"
+                                    CommandParameter="{Binding ContactText, 
+                                    RelativeSource={RelativeSource AncestorType=views:ValidatorCopyContact}}"/>
+           </EventTriggerBehavior>
+        </Interaction.Behaviors>
+        <Grid 
+                     IsVisible="{Binding ContactText, 
+                        RelativeSource={RelativeSource AncestorType=views:ValidatorCopyContact}, 
+                        Converter={x:Static StringConverters.IsNotNullOrEmpty}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" MinWidth="100" Classes="Label" 
+                       Text="{Binding Label, RelativeSource={RelativeSource AncestorType=views:ValidatorCopyContact}}"/>
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <TextBlock Classes="CopyTarget" 
+                               Text="{Binding ContactText, RelativeSource={RelativeSource AncestorType=views:ValidatorCopyContact}}"/>
+                    <controls:SymbolIcon Symbol="Copy" FontSize="24" Cursor="Hand" />
+                </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

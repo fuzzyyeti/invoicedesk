@@ -1,0 +1,4 @@
+{
+  "InvoiceApiUrl": "https://fake-invoices.matt-mccarn.workers.dev/",
+  "ValidatorContacts": "fake_customer_form.csv"
+}

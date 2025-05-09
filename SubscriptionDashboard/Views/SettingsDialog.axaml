@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:SubscriptionDashboard.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SubscriptionDashboard.Views.SettingsDialog"
+        x:DataType="viewModels:SettingsViewModel"
+        Height="220"
+        Title="Configuration">
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="2">
+            <TextBlock HorizontalAlignment="Left" Margin="15" Text="Data API URL" />
+            <TextBox HorizontalAlignment="Left" Margin="15" Text="{Binding ApiUrl}" />
+            <TextBlock HorizontalAlignment="Left" Margin="15" Text="Validator Contacts Path" />
+            <TextBox HorizontalAlignment="Left" Margin="15" Text="{Binding ValidatorContacts}" />
+        </UniformGrid>
+        <StackPanel DockPanel.Dock="Bottom" VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button Margin="5" Command="{Binding CloseCommand}">Cancel</Button>
+            <Button Margin="5" Command="{Binding UpdateConfiuration}">Apply</Button>
+        </StackPanel>
+    </DockPanel>
+</Window>

@@ -1,0 +1,14 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="Button.CardStyle">
+        <Setter Property="BorderBrush" Value="Gray" />
+        <Setter Property="BorderThickness" Value="5" />
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="Background" Value="LightGray" />
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="Width" Value="200" />
+        <Setter Property="Height" Value="120" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+</Styles>

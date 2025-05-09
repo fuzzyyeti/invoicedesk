@@ -1,0 +1,180 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:SubscriptionDashboard.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="clr-namespace:SubscriptionDashboard.Models"
+        xmlns:controls="clr-namespace:FluentAvalonia.UI.Controls;assembly=FluentAvalonia"
+        xmlns:views="clr-namespace:SubscriptionDashboard.Views"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SubscriptionDashboard.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/favicon.png"
+        Title="Invoice Desk"
+        WindowState="Maximized">
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+    <Window.Resources>
+        <ResourceDictionary>
+            <vm:IsPaidConverter x:Key="IsPaidConverter" />
+            <vm:IsPaidBrushConverter x:Key="IsPaidBrushConverter" />
+            <ResourceDictionary.MergedDictionaries>
+                <MergeResourceInclude Source="avares://SubscriptionDashboard/Views/ValidatorCardView.axaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        <vm:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
+        <vm:NotNullToVisibilityConverter x:Key="NotNullToVisibilityConverter" />
+        <vm:EmptyToVisibilityConverter x:Key="EmptyToVisibilityConverter" />
+        <vm:NotEmptyToVisibilityConverter x:Key="NotEmptyToVisibilityConverter" />
+    </Window.Resources>
+    <Window.Styles>
+        <Style Selector="TextBlock">
+            <Setter Property="FontFamily" Value="{StaticResource RobotoFont}" />
+        </Style>
+        <Style Selector="TextBlock.Header">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontFamily" Value="{StaticResource RobotoFont}" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <StyleInclude Source="avares://SubscriptionDashboard/Views/CardStyle.axaml" />
+    </Window.Styles>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button Command="{Binding ShowSettingsDialog}">
+                <controls:SymbolIcon Symbol="Settings" />
+            </Button>
+            <Button Command="{Binding UpdateData}">
+                <controls:SymbolIcon Symbol="Refresh" />
+            </Button>
+        </StackPanel>
+        <TextBlock Grid.Row="0" Classes="Header" Text="Percentage Paid By Epoch"></TextBlock>
+        <ItemsControl Margin="5" Grid.Row="1" ItemsSource="{Binding EpochPercentageViewModels}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="0 5 20 5" Orientation="Vertical">
+                        <StackPanel.Styles>
+                            <Style Selector="TextBlock">
+                                <Setter Property="FontSize" Value="18" />
+                            </Style>
+                        </StackPanel.Styles>
+                        <TextBlock Text="{Binding Epoch}" />
+                        <TextBlock Text="{Binding Percentage}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <TextBlock Grid.Row="2" Classes="Header" Text="Validator Status"></TextBlock>
+        <StackPanel Margin="5" Orientation="Horizontal" Grid.Row="3">
+            <TextBox CornerRadius="3" Width="300" Text="{Binding SearchText}" />
+            <controls:SymbolIcon FontSize="24" DockPanel.Dock="Right" Symbol="Find">
+                <controls:SymbolIcon.RenderTransform>
+                    <TranslateTransform X="-30" />
+                </controls:SymbolIcon.RenderTransform>
+            </controls:SymbolIcon>
+        </StackPanel>
+        <controls:ProgressRing IsVisible="{Binding Validators, Converter={StaticResource EmptyToVisibilityConverter}}"
+                               x:Name="ProgressRing" Grid.Row="4"
+                               IsIndeterminate="True"
+                               Foreground="LightBlue"
+                               BorderThickness="5"
+                               Width="200"
+                               Height="200"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center" />
+        <ScrollViewer
+            IsVisible="{Binding Validators,
+        Converter={StaticResource NotEmptyToVisibilityConverter}}"
+            Grid.Row="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <ItemsControl ItemsSource="{Binding Validators}" ItemTemplate="{StaticResource Validator}">
+                <ItemsControl.Styles>
+                    <Style Selector="TextBlock">
+                        <Setter Property="Foreground" Value="Black" />
+                        <Setter Property="FontSize" Value="16" />
+                    </Style>
+                </ItemsControl.Styles>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </ScrollViewer>
+        <GridSplitter Grid.Row="5" />
+        <Grid Grid.Row="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Classes="Header"
+                       MaxHeight="50"
+                       Text="{Binding SelectedValidator.Name, 
+                   StringFormat='{}{0} - Customer Detail'}" />
+            <TextBlock Grid.ColumnSpan="2" Grid.Column="0"
+                       IsVisible="{Binding SelectedValidator, 
+                            Converter={StaticResource NullToVisibilityConverter}}"
+                       Grid.Row="1"
+                       Text="Select a customer above to display details"
+                       FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Border Grid.Row="1" Grid.Column="0" DockPanel.Dock="Right" Margin="5"
+                    IsVisible="{Binding SelectedValidator, 
+              Converter={StaticResource NotNullToVisibilityConverter}}"
+                    HorizontalAlignment="Left">
+                <StackPanel Margin="20 5" Orientation="Vertical">
+                    <TextBlock Classes="Header" HorizontalAlignment="Center"
+                               Text="Copy Usernames" Margin="5" />
+                    <views:ValidatorCopyContact HorizontalAlignment="Left"
+                                                Margin="5"
+                                                Label="Telegram" DataContext="{Binding SelectedValidator}"
+                                                ContactText="{Binding Contact.TelegramUsername}" />
+                    <views:ValidatorCopyContact HorizontalAlignment="Left"
+                                                Margin="5"
+                                                Label="Discord" DataContext="{Binding SelectedValidator}"
+                                                ContactText="{Binding Contact.DiscordUsername}" />
+                    <views:ValidatorCopyContact HorizontalAlignment="Left"
+                                                Margin="5"
+                                                Label="X" DataContext="{Binding SelectedValidator}"
+                                                ContactText="{Binding Contact.XUsername}" />
+                </StackPanel>
+            </Border>
+            <DataGrid Grid.Row="1" Margin="20, 5" Grid.Column="1" IsReadOnly="True" DockPanel.Dock="Left"
+                      ItemsSource="{Binding SelectedValidator.Invoices}"
+                      AutoGenerateColumns="False"
+                      IsVisible="{Binding SelectedValidator, 
+                          Converter={StaticResource NotNullToVisibilityConverter}}"
+                      >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Epoch" Binding="{Binding Epoch}" />
+                    <DataGridTextColumn Header="Amount" Binding="{Binding DisplayAmountVSol}" />
+                    <DataGridTemplateColumn Header="Balance">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate x:DataType="models:Invoice">
+                                <TextBlock VerticalAlignment="Bottom"
+                                           Foreground="{Binding BalanceOutstanding, Converter={StaticResource IsPaidBrushConverter}}"
+                                           Text="{Binding BalanceOutstanding, Converter={StaticResource IsPaidConverter}}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>

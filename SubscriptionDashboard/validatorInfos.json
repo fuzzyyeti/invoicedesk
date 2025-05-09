@@ -1,0 +1,617 @@
+[
+  {
+    "voteAccountPubkey": "1KXz4xKV2viJCGpxqnQqdf2J45vQr5USdmtcJLTaHkm",
+    "name": "Evilis",
+    "icon": "/logo_0.png"
+  },
+  {
+    "voteAccountPubkey": "21wUViiyG1g47VZ39ZZsSkFX9nu6bkyfy6jryHGD2TUB",
+    "name": "Starnis",
+    "icon": "/logo_1.png"
+  },
+  {
+    "voteAccountPubkey": "2ZiMfQaT59j86HVWCvspuMtBotnVBeTc3BKk3kKpwgKP",
+    "name": "Fluxgen",
+    "icon": "/logo_2.png"
+  },
+  {
+    "voteAccountPubkey": "2ayMCC4aizr8RGg5ptXYqu8uoxW1whNek1hE1zaAd58z",
+    "name": "Petalyn",
+    "icon": "/logo_3.png"
+  },
+  {
+    "voteAccountPubkey": "2iWXwF2Q5W6o7yntV2mkbxncB4rYHnX61y3NU8a8EFMJ",
+    "name": "Cubosis",
+    "icon": "/logo_4.png"
+  },
+  {
+    "voteAccountPubkey": "323d4ZiSqS1PwGwpJwD88jNPaGqkm7YYW2tJt2T8iFzo",
+    "name": "Gyrion",
+    "icon": "/logo_5.png"
+  },
+  {
+    "voteAccountPubkey": "3Xn3K5zeTzs4sURj1PCRaF6rvFg2hPgT49B4SiM998f7",
+    "name": "Loopra",
+    "icon": "/logo_6.png"
+  },
+  {
+    "voteAccountPubkey": "3dXXxEaV4fZqw1PL7VezfDkiJV5W4WTtRjh2EHgKSthF",
+    "name": "Plantiq",
+    "icon": "/logo_7.png"
+  },
+  {
+    "voteAccountPubkey": "3iPuTgpWaaC6jYEY7kd993QBthGsQTK3yPCrNJyPMhCD",
+    "name": "Avantra",
+    "icon": "/logo_8.png"
+  },
+  {
+    "voteAccountPubkey": "3xjfK9C9YNcta8MvK1US4sQ3bc6DEjoJoR3qLExGf9xE",
+    "name": "Netlynx",
+    "icon": "/logo_9.png"
+  },
+  {
+    "voteAccountPubkey": "4FsAxdHQ6HmFrDD7yCwsKNApuA67QYSCMoLAy3NfySxJ",
+    "name": "Diamaxa",
+    "icon": "/logo_10.png"
+  },
+  {
+    "voteAccountPubkey": "4m1PbxzwLdUnEwog3T9UKxgjktgriHgE1CfAhMqDw7Xx",
+    "name": "Plexis",
+    "icon": "/logo_11.png"
+  },
+  {
+    "voteAccountPubkey": "4qvFxnUXYjBdcviCwVV7gKcGJMCENEBfS82hSLJUhyvu",
+    "name": "Proflex",
+    "icon": "/logo_12.png"
+  },
+  {
+    "voteAccountPubkey": "5AC692spnjbegP7ttCXJEzUe8S81sLYsqJd8Ae6Zv1xU",
+    "name": "Cyvera",
+    "icon": "/logo_13.png"
+  },
+  {
+    "voteAccountPubkey": "5daP6pZoPSak6UEKuRg2HHjvTPpqqwB113oNamGNKuuZ",
+    "name": "Botania",
+    "icon": "/logo_14.png"
+  },
+  {
+    "voteAccountPubkey": "5iZ5PQPy5Z9XDnkfoWPi6nvUgtxWnRFwZ36WaftPuaVM",
+    "name": "Cleodex",
+    "icon": "/logo_15.png"
+  },
+  {
+    "voteAccountPubkey": "6JfBwvcz5QUKQJ37BMKTLrf968DDJBtwoZLw19aHwFtQ",
+    "name": "Orballa",
+    "icon": "/logo_16.png"
+  },
+  {
+    "voteAccountPubkey": "6MP6Bun9VmkGcRVU4iF14Q8P7jTkGtQW9zVwmB9kCYyK",
+    "name": "Awari",
+    "icon": "/logo_17.png"
+  },
+  {
+    "voteAccountPubkey": "6oscGUEkXE8fyWoC4czRKbM1cuLkJNtgRsX1Un6w88Vf",
+    "name": "Hexport",
+    "icon": "/logo_18.png"
+  },
+  {
+    "voteAccountPubkey": "76DafWkJ6pGK2hoD41HjrM4xTBhfKqrDYDazv13n5ir1",
+    "name": "Solara",
+    "icon": "/logo_19.png"
+  },
+  {
+    "voteAccountPubkey": "7JZTyHRTmzHfmHH89uT9xKSKDVJ1VnNQ1FeTeM4iH3J2",
+    "name": "Ploxia",
+    "icon": "/logo_20.png"
+  },
+  {
+    "voteAccountPubkey": "7K8DVxtNJGnMtUY1CQJT5jcs8sFGSZTDiG7kowvFpECh",
+    "name": "Curvista",
+    "icon": "/logo_21.png"
+  },
+  {
+    "voteAccountPubkey": "86Sw9R6ynPmXnHfwUWinXtq1QoF2KHesfQQyZG5r8sXo",
+    "name": "Planture",
+    "icon": "/logo_22.png"
+  },
+  {
+    "voteAccountPubkey": "8DHFGo3fDB8GudbNLZEyExLzXQPwvY4twybPbxwDnffx",
+    "name": "Uniqon",
+    "icon": "/logo_23.png"
+  },
+  {
+    "voteAccountPubkey": "8gJCfKzr55gM6DtAaFqoWjBGAmsJ71mpHem6qJAASBU4",
+    "name": "Cyclion",
+    "icon": "/logo_24.png"
+  },
+  {
+    "voteAccountPubkey": "91413b9eEvG6UofpSgwdUgH9Lz4QBF1G3J325Bw7JwGR",
+    "name": "Sparkera",
+    "icon": "/logo_25.png"
+  },
+  {
+    "voteAccountPubkey": "9Gko8QZBbV5SrEvHKtQHcMrGGSfgFP3KJUozEGifu25x",
+    "name": "Westiv",
+    "icon": "/logo_26.png"
+  },
+  {
+    "voteAccountPubkey": "9Q1cWVFNc4UgU7dyFy29mUyeDnNZWSDaJKYVAR5jLpaK",
+    "name": "Linqube",
+    "icon": "/logo_27.png"
+  },
+  {
+    "voteAccountPubkey": "9f7dqiYNBZbgPesAnLeWnKCtxYHSfMg5x1EMZCJwVwG7",
+    "name": "Dropletix",
+    "icon": "/logo_28.png"
+  },
+  {
+    "voteAccountPubkey": "9jYFwBfbjYmvasFbJyES9apLJDTkwtbgSDRWanHEvcRw",
+    "name": "Futura",
+    "icon": "/logo_29.png"
+  },
+  {
+    "voteAccountPubkey": "9ymU1ayh9mZVyDL4dUUtXKtX1wCaFNzZPGutLJgqzuC1",
+    "name": "Globerra",
+    "icon": "/logo_30.png"
+  },
+  {
+    "voteAccountPubkey": "ACCRENAtboR1MyyoiPvwNZNkjt1GcLARrACh6hZXdddF",
+    "name": "Elevark",
+    "icon": "/logo_31.png"
+  },
+  {
+    "voteAccountPubkey": "AY271jdvcyo5VzBiWsMGLEjpZFFrarq8FDydJHLmYgCG",
+    "name": "Radox",
+    "icon": "/logo_32.png"
+  },
+  {
+    "voteAccountPubkey": "Ac1beBKixfNdrTAac7GRaTsJTxLyvgGvJjvy4qQfvyfc",
+    "name": "Lintiq",
+    "icon": "/logo_33.png"
+  },
+  {
+    "voteAccountPubkey": "B1w6SZcyvjyp6zEyStcc8u9AxXAh2AbYvNzMmP9rRKE9",
+    "name": "Rythmix",
+    "icon": "/logo_34.png"
+  },
+  {
+    "voteAccountPubkey": "B6nDYYLc2iwYqY3zdmavMmU9GjUL2hf79MkufviM2bXv",
+    "name": "Swirlet",
+    "icon": "/logo_35.png"
+  },
+  {
+    "voteAccountPubkey": "BANX7gZwUYFiFJKX9i2hHygy6DxixPutQoQW1U1oBdwt",
+    "name": "Cogency",
+    "icon": "/logo_36.png"
+  },
+  {
+    "voteAccountPubkey": "BeSov1og3sEYyH9JY3ap7QcQDvVX8f4sugfNPf9YLkcV",
+    "name": "Hexify",
+    "icon": "/logo_37.png"
+  },
+  {
+    "voteAccountPubkey": "CHiaohVV2SQCFhiYP73iQzWT6HxnZqnAZJJqAYTeLAo",
+    "name": "Twirlix",
+    "icon": "/logo_38.png"
+  },
+  {
+    "voteAccountPubkey": "CNcaYdqkCwxDpKSVK8in5f6kqrTiZ5SuHsHFDqx6jNvu",
+    "name": "Blooma",
+    "icon": "/logo_39.png"
+  },
+  {
+    "voteAccountPubkey": "ChaosDKeBjU22B4nnvYWXyTRPuWTzJBR4m3QPfBw6Tta",
+    "name": "Roundiq",
+    "icon": "/logo_40.png"
+  },
+  {
+    "voteAccountPubkey": "CogentC52e7kktFfWHwsqSmr8LiS1yAtfqhHcftCPcBJ",
+    "name": "Stacka",
+    "icon": "/logo_41.png"
+  },
+  {
+    "voteAccountPubkey": "CwSZ17woioM2bqEbaswZJYvx5pemN6t3shBcU6zqPHyG",
+    "name": "Leafstep",
+    "icon": "/logo_42.png"
+  },
+  {
+    "voteAccountPubkey": "D3QPJm7BDzzPeRG51YZSEz3LfV7GvFNu9NkcibzURxuj",
+    "name": "Brightile",
+    "icon": "/logo_43.png"
+  },
+  {
+    "voteAccountPubkey": "DG6fVEB2Qy1jntvHVPui3R12CMqcwNNnjYPYdsbQ9ACP",
+    "name": "Clariwave",
+    "icon": "/logo_44.png"
+  },
+  {
+    "voteAccountPubkey": "DSzLJLUQD55sxaCsJBHLFSV1SYngMmT7oY8rLpFhyGgb",
+    "name": "Velix",
+    "icon": "/logo_45.png"
+  },
+  {
+    "voteAccountPubkey": "DfpdmTsSCBPxCDwZwgBMfjjV8mF8xHkGRcXP8dJBVmrq",
+    "name": "Upqube",
+    "icon": "/logo_46.png"
+  },
+  {
+    "voteAccountPubkey": "DriFTm3wM9ugxhCA1K3wVQMSdC4Dv4LNmyZMmZiuHRpp",
+    "name": "Orbique",
+    "icon": "/logo_47.png"
+  },
+  {
+    "voteAccountPubkey": "DvFTFLrEQSfEadPQdesvf5bpYWYqXK9iaJAjq95piQBs",
+    "name": "Vistora",
+    "icon": "/logo_48.png"
+  },
+  {
+    "voteAccountPubkey": "DzQHN1oTdN85Sbku2bc9Fu9yEwrgRMiu2XbRcntZ31yb",
+    "name": "Quilix",
+    "icon": "/logo_49.png"
+  },
+  {
+    "voteAccountPubkey": "EARNynHRWg6GfyJCmrrizcZxARB3HVzcaasvNa8kBS72",
+    "name": "Turniq",
+    "icon": "/logo_50.png"
+  },
+  {
+    "voteAccountPubkey": "EBVj3uwSKZpqEb1K267JaPxDQhULVqCy6hYeQqjsPh81",
+    "name": "Glowlet",
+    "icon": "/logo_51.png"
+  },
+  {
+    "voteAccountPubkey": "EJHf5N9is5spAF5Kz384tTvTV3CwTka6qzUoZrYm53SV",
+    "name": "Widebit",
+    "icon": "/logo_52.png"
+  },
+  {
+    "voteAccountPubkey": "ELE2xaC6i6pmeu7bfrYjBv4whBeTAbgwcg5hf2ythiBs",
+    "name": "Seacurve",
+    "icon": "/logo_53.png"
+  },
+  {
+    "voteAccountPubkey": "EMVmh5hF6LT1sZM9G7dEX1bykRYEymWY2vtE7QHBBAW6",
+    "name": "Finora",
+    "icon": "/logo_54.png"
+  },
+  {
+    "voteAccountPubkey": "EdkhvJYa3kWQkFJAPzmGsQyi1D2JA5a7vwWw4hDuwbt",
+    "name": "Peakra",
+    "icon": "/logo_55.png"
+  },
+  {
+    "voteAccountPubkey": "EfnywDKqArxK6N6FS9ctsuzNdxfx3pzfXEQE5EevQ1SV",
+    "name": "Solight",
+    "icon": "/logo_56.png"
+  },
+  {
+    "voteAccountPubkey": "Ehdn9LdjTAURQSMoDPERXLehtvzy7QD762wwPkzGT7RS",
+    "name": "Droptiq",
+    "icon": "/logo_57.png"
+  },
+  {
+    "voteAccountPubkey": "EpicsoqLdDP8qRn3wQRKTSKAXbjK9dUgFfNPRQS77MQD",
+    "name": "Leafico",
+    "icon": "/logo_58.png"
+  },
+  {
+    "voteAccountPubkey": "EtMSc3MvcDXUr6ChK5GxyFVwTxYA3zqP5XzjE9jwKvSV",
+    "name": "Swelix",
+    "icon": "/logo_59.png"
+  },
+  {
+    "voteAccountPubkey": "FACqsS19VScz8oo2YhdMg35EsAy6xsCZ9Y58eJXGv8QJ",
+    "name": "Arcana",
+    "icon": "/logo_60.png"
+  },
+  {
+    "voteAccountPubkey": "FCvNkHa4U3yh7AXWGGL2jWLWiSRouR8EtzY5WVTHKTHa",
+    "name": "Curvit",
+    "icon": "/logo_61.png"
+  },
+  {
+    "voteAccountPubkey": "G1EAMrJcvzs5SwqAQRgDTjYBEGrxxJVwNS7qiUtB3akg",
+    "name": "Orba",
+    "icon": "/logo_62.png"
+  },
+  {
+    "voteAccountPubkey": "G1juWDqojmp5CWDhgRqtXrtpAFw9xqhjmEQAKr9faf4V",
+    "name": "Aqualoom",
+    "icon": "/logo_63.png"
+  },
+  {
+    "voteAccountPubkey": "GA2t11gJcmuZ4y7pShTzgYDkxVaJaVQJqkVUqojhPPsT",
+    "name": "Cirqula",
+    "icon": "/logo_64.png"
+  },
+  {
+    "voteAccountPubkey": "GNZ1PAAS33davY4Q1BMEpZEpVBtRtGvSpcTH5wYVkkVt",
+    "name": "Ventara",
+    "icon": "/logo_65.png"
+  },
+  {
+    "voteAccountPubkey": "GREEDkpTvpKzcGvBu9qd36yk6BfjTWPShB67gLWuixMv",
+    "name": "Leafletix",
+    "icon": "/logo_66.png"
+  },
+  {
+    "voteAccountPubkey": "GdVBPczdFaPf1GXvx8ByHeA1ZHAHwwmdQEPihH74SXm9",
+    "name": "Gradiant",
+    "icon": "/logo_67.png"
+  },
+  {
+    "voteAccountPubkey": "GiXx1mwSR44Tz96CaDqoadzAhZgZv7e3yZshqUwiEwwh",
+    "name": "Whirla",
+    "icon": "/logo_68.png"
+  },
+  {
+    "voteAccountPubkey": "Gvt8s5Bwnhg4G27VbnT1Zkfh7Jsztq6CNvZcc5anPonS",
+    "name": "Veloso",
+    "icon": "/logo_69.png"
+  },
+  {
+    "voteAccountPubkey": "H7fXvnLCKtZqJBTipxeseabGfAZUdHJ9XuP6hCKrbvUb",
+    "name": "Surflow",
+    "icon": "/logo_70.png"
+  },
+  {
+    "voteAccountPubkey": "HMV14UAuULSwqmZhsKHzaVkYAd94iWpEeURgbUegfQLc",
+    "name": "Terniq",
+    "icon": "/logo_71.png"
+  },
+  {
+    "voteAccountPubkey": "HMk1qny4fvMnajErxjXG5kT89JKV4cx1PKa9zhQBF9ib",
+    "name": "Dappla",
+    "icon": "/logo_72.png"
+  },
+  {
+    "voteAccountPubkey": "J1to3PQfXidUUhprQWgdKkQAMWPJAEqSJ7amkBDE9qhF",
+    "name": "Ovolo",
+    "icon": "/logo_73.png"
+  },
+  {
+    "voteAccountPubkey": "Luck3DN3HhkV6oc7rPQ1hYGgU3b5AhdKW9o1ob6AyU9",
+    "name": "Verdania",
+    "icon": "/logo_74.png"
+  },
+  {
+    "voteAccountPubkey": "Luna8BkZNpZ9DKmszrZYPvFpTr4eJJfxxTnGDwTrYkv",
+    "name": "\ud83c\udf0a Solwave Collective",
+    "icon": "/logo_75.png"
+  },
+  {
+    "voteAccountPubkey": "LunarE7WQyxpPwKo2hkEZZquu6UDWMNjvf3JyzGmdfp",
+    "name": "\ud83d\udef0\ufe0f OrbitSync Validators",
+    "icon": "/logo_76.png"
+  },
+  {
+    "voteAccountPubkey": "MNDE6ueF5uMvyk3ohq7wWZ8H749pbpj1yHj2MvMRCJM",
+    "name": "\ud83c\udf3f Evergreen Meshworks",
+    "icon": "/logo_77.png"
+  },
+  {
+    "voteAccountPubkey": "NeodymeDFipD7eA1ShrLJAZTBdHWcFsDB9YkoHshZNk",
+    "name": "\ud83d\ude80 Apex Velocity Node",
+    "icon": "/logo_78.png"
+  },
+  {
+    "voteAccountPubkey": "PineDoC593nrX16W8ZLWfF5Evb6otv7fRfZMLjPAHe3",
+    "name": "\ud83e\udde0 NeuralStake Systems",
+    "icon": "/logo_79.png"
+  },
+  {
+    "voteAccountPubkey": "SBLZib4npE7svxFA7AsD3ytdQAfYNb39c8zsU82AA2E",
+    "name": "\ud83d\udd25 EmberForge Consortium",
+    "icon": "/logo_0.png"
+  },
+  {
+    "voteAccountPubkey": "StepeLdhJ2znRjHcZdjwMWsC4nTRURNKQY8Nca82LJp",
+    "name": "\ud83c\udf19 LunarPulse Network",
+    "icon": "/logo_1.png"
+  },
+  {
+    "voteAccountPubkey": "THWfRpcJSC7oDrNMSCcixTZmCHVBTEVQL4qnd1UTD1x",
+    "name": "\ud83e\udded CompassLayer Validators",
+    "icon": "/logo_2.png"
+  },
+  {
+    "voteAccountPubkey": "TKMA1fBGq4M7gF2CNnhphX6vNateFc2cm2FL2mYwq7e",
+    "name": "\ud83d\udee1\ufe0f IronTrust Alliance",
+    "icon": "/logo_3.png"
+  },
+  {
+    "voteAccountPubkey": "VotESBSkLKU8vebS6wTR2rzWWJsLc6YThYS6tebPxXq",
+    "name": "\ud83c\udf08 Rainbow Rail Consensus",
+    "icon": "/logo_4.png"
+  },
+  {
+    "voteAccountPubkey": "adraBKLNY3DL3pg6SJRDYiMA8BsznaWpUdE42X41gbP",
+    "name": "\ud83c\udf00 CycloneMesh Validators",
+    "icon": "/logo_5.png"
+  },
+  {
+    "voteAccountPubkey": "axyQeKp44XqUnvC1jVHoeuAJ3j8wVnGeWtddeAcNYcF",
+    "name": "\ud83e\uddbe MechaNode Dynamics",
+    "icon": "/logo_6.png"
+  },
+  {
+    "voteAccountPubkey": "bXr9MyoUAaGusQZ4gaUPmSZByHAV7RRGr1FhCW5tFh8",
+    "name": "\ud83c\udfaf TrueAim Staking Co.",
+    "icon": "/logo_7.png"
+  },
+  {
+    "voteAccountPubkey": "bookLxG3LkSmt4htJ1x9zPw6E34RRMAi7sUn5mM3CNN",
+    "name": "\ud83e\udd84 MysticValidator DAO",
+    "icon": "/logo_8.png"
+  },
+  {
+    "voteAccountPubkey": "burnn86ebxJnhtk3cfpHoZxy5nUaC3K9U8VwzgqhEEt",
+    "name": "\u26a1 FlashEpoch Systems",
+    "icon": "/logo_9.png"
+  },
+  {
+    "voteAccountPubkey": "chrtyiAw8suFRvS7rTcfgcDyNu49bGPNZ2fjSPzNPFr",
+    "name": "\ud83c\udf10 ValidatorVerse Labs",
+    "icon": "/logo_10.png"
+  },
+  {
+    "voteAccountPubkey": "dedxrPfNqPKBRmUyP9LDkaitpQzU6PD44jA6GP9Ndhk",
+    "name": "\ud83d\udc09 DragonStake Protocol",
+    "icon": "/logo_11.png"
+  },
+  {
+    "voteAccountPubkey": "eyeVhGmVEoPSWmQU2wP5WZmMihPBTCk7kMMm4VhuAKS",
+    "name": "\ud83e\ude90 CosmicRoot Validators",
+    "icon": "/logo_12.png"
+  },
+  {
+    "voteAccountPubkey": "fVotEjqpmpQYgyVyBCwYm62BKqqTQNE6SpYnRmdBazH",
+    "name": "\ud83d\udc8e CrystalGrid Infra",
+    "icon": "/logo_13.png"
+  },
+  {
+    "voteAccountPubkey": "fuyugZxM5S4NyV3ZYoc6ebs3fmRTrZ3X27MKCFvHpVD",
+    "name": "\ud83d\udd17 ChainKind Trust",
+    "icon": "/logo_14.png"
+  },
+  {
+    "voteAccountPubkey": "gVot34jauJpexBL2YUSPBKsmZ4V2ffmDcRk4yfSEnx8",
+    "name": "\ud83c\udf9b\ufe0f Modulo Relay Syndicate",
+    "icon": "/logo_15.png"
+  },
+  {
+    "voteAccountPubkey": "gangtRyGPTvYWb8K3xS2feJQaCks4iJ7rytFUPtVqSY",
+    "name": "\ud83c\udf1f NovaSpark Validators",
+    "icon": "/logo_16.png"
+  },
+  {
+    "voteAccountPubkey": "goJiRADNdmfnJ4iWEyft7KaYMPTVsRba2Ee1akDEBXb",
+    "name": "\ud83e\udd89 NightOwl Consensus",
+    "icon": "/logo_17.png"
+  },
+  {
+    "voteAccountPubkey": "gridZ5cMHjWGktAQt6o36NtF7XSv19nJBrW83zmo7BM",
+    "name": "\ud83d\udd2e OracleGlow Guardians",
+    "icon": "/logo_18.png"
+  },
+  {
+    "voteAccountPubkey": "hxVjzDmta9TuN1gM981TRKnfwG2uZ9TQDGwSCs3uDow",
+    "name": "\ud83d\udc22 TortoiseMesh Collective",
+    "icon": "/logo_19.png"
+  },
+  {
+    "voteAccountPubkey": "juicQdAnksqZ5Yb8NQwCLjLWhykvXGktxnQCDvMe6Nx",
+    "name": "\ud83d\udc1d HiveStake Federation",
+    "icon": "/logo_20.png"
+  },
+  {
+    "voteAccountPubkey": "masvNDXtxVVMrYSV84RMry97JyHXAFcdfTZJ5VzpSYR",
+    "name": "\ud83d\udef0\ufe0f StellarBeacon Validators",
+    "icon": "/logo_21.png"
+  },
+  {
+    "voteAccountPubkey": "mesh3Px7WMi7Dkxke4ZZBULoKHM6sp37wKtg4DwPqPY",
+    "name": "\ud83e\uddca Frostbyte Nodeworks",
+    "icon": "/logo_22.png"
+  },
+  {
+    "voteAccountPubkey": "metaRWEc85haGPz6P79kiuG3F8JXKjR7oQr2zjokUCU",
+    "name": "\ud83d\udd0a EchoLayer Infrastructure",
+    "icon": "/logo_23.png"
+  },
+  {
+    "voteAccountPubkey": "mythxna3hpzXSbaseyR12vu5Vvym1HxS92eCgXLvY7w",
+    "name": "\ud83d\udea6 SignalForge Validators",
+    "icon": "/logo_24.png"
+  },
+  {
+    "voteAccountPubkey": "nateBZg7oHVPLB2samBLkKvfzedU3ALZBexMFPMKjn1",
+    "name": "\ud83e\uddec GeneSys Mesh",
+    "icon": "/logo_25.png"
+  },
+  {
+    "voteAccountPubkey": "nebu1WnZBrFZz5X7sfPWuEqyb8LBSsrXpxaesnK9CRE",
+    "name": "\ud83e\ude84 WandStake Syndicate",
+    "icon": "/logo_26.png"
+  },
+  {
+    "voteAccountPubkey": "o27rnqfNHPwHsRp2xPXXwWzn2q2dGxn6UD4Rt5KMU5h",
+    "name": "\ud83d\udef8 Validator UFO Club",
+    "icon": "/logo_27.png"
+  },
+  {
+    "voteAccountPubkey": "oRAnGeU5h8h2UkvbfnE5cjXnnAa4rBoaxmS4kbFymSe",
+    "name": "\ud83c\udfa1 Epoch Carnival Nodes",
+    "icon": "/logo_28.png"
+  },
+  {
+    "voteAccountPubkey": "pENgUh4K9zNacyU3PXVE9KugW98XCqZsWpEvA8d8wzX",
+    "name": "\ud83e\uddf2 MagnetarStake Core",
+    "icon": "/logo_29.png"
+  },
+  {
+    "voteAccountPubkey": "phz34EcgWRCT9otPzRS2JtSzVHxQJk4SovqJvV1TQk8",
+    "name": "\ud83d\udca1 IdeaLoop Consensus",
+    "icon": "/logo_30.png"
+  },
+  {
+    "voteAccountPubkey": "radYEig9KGrMTMWbWRFV7LStotQbnLgPaEFHVDsudQz",
+    "name": "\ud83c\udfd4\ufe0f GlacierStake Council",
+    "icon": "/logo_31.png"
+  },
+  {
+    "voteAccountPubkey": "rapxbkwBSSvtqRFrsY83f51oUuZNuVXci74MuzYhiCy",
+    "name": "\ud83e\uddea Alchemix Validators",
+    "icon": "/logo_32.png"
+  },
+  {
+    "voteAccountPubkey": "sTach38ebT8jnGH8i2D1g8NDAS6An19whVMnSSWPXt4",
+    "name": "\ud83c\udff5\ufe0f BloomChain Operations",
+    "icon": "/logo_33.png"
+  },
+  {
+    "voteAccountPubkey": "sagasJDjjAHND4hien3bbo5xXkzCT5Ss6nKjyUJ45aw",
+    "name": "\ud83e\ude99 TrustMint Collective",
+    "icon": "/logo_34.png"
+  },
+  {
+    "voteAccountPubkey": "steakxfubt37xYdvuXz7BV5Uhhhk1FyJx9zGHfDcTVr",
+    "name": "\ud83d\udce6 BoxStake Grid",
+    "icon": "/logo_35.png"
+  },
+  {
+    "voteAccountPubkey": "sw222BfVDABppvydacSCj3JVaPSC83RoRtyvLmr6pNx",
+    "name": "\ud83e\udeb6 FeatherNet Validators",
+    "icon": "/logo_36.png"
+  },
+  {
+    "voteAccountPubkey": "tri1cHBy47fPyhCvrCf6FnR7Mz6XdSoSBah2FsZVQeT",
+    "name": "\ud83e\uddf1 StackBar Network",
+    "icon": "/logo_37.png"
+  },
+  {
+    "voteAccountPubkey": "votem3UdGx5xWFbY9EFbyZ1X2pBuswfR5yd2oB3JAaj",
+    "name": "\ud83d\udd73\ufe0f VoidLayer Authority",
+    "icon": "/logo_38.png"
+  },
+  {
+    "voteAccountPubkey": "vsxurakbU9y5XddhpnvbgPoZzA46osJmfXj2AXCn94c",
+    "name": "\ud83c\udf0b LavaVote Circle",
+    "icon": "/logo_39.png"
+  },
+  {
+    "voteAccountPubkey": "vvvvXsU6iG2enDVvs4KeVqS4YrZczTujSv5p3dSeNHx",
+    "name": "\ud83e\udd88 SharkMesh Validators",
+    "icon": "/logo_40.png"
+  },
+  {
+    "voteAccountPubkey": "wetwJSUHT5afX3gP49q75gkz8FcCfvsw2kuSQ1UjT9R",
+    "name": "\ud83e\uddbe CyborgStake Alliance",
+    "icon": "/logo_41.png"
+  },
+  {
+    "voteAccountPubkey": "xLabsqDpN9WHXEXSJXk1yhqh5H8BgcqiBP1CR6Mkjcb",
+    "name": "\ud83d\udce1 Radiowave Epoch Relay",
+    "icon": "/logo_42.png"
+  }
+]

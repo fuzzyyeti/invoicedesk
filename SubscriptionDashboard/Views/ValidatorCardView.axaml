@@ -1,0 +1,27 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewModels="clr-namespace:SubscriptionDashboard.ViewModels">
+    <DataTemplate x:Key="Validator" x:DataType="viewModels:ValidatorViewModel">
+        <Button Classes="CardStyle" BorderBrush="Black" BorderThickness="1"
+                Command="{Binding SelectCommand}"
+                Background="{Binding StatusColor}"
+                Padding="5">
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Discord" Command="{Binding ContactDiscord}"
+                              CommandParameter="{Binding DataContext, RelativeSource={RelativeSource Self}}" />
+                    <MenuItem Header="Telegram" Command="{Binding ContactTelegram}"
+                              CommandParameter="{Binding DataContext, RelativeSource={RelativeSource Self}}" />
+                    <MenuItem Header="X" Command="{Binding ContactX}"
+                              CommandParameter="{Binding DataContext, RelativeSource={RelativeSource Self}}" />
+                    <MenuItem Header="Copy Vote Key" Command="{Binding CopyVoteKey}"
+                              CommandParameter="{Binding DataContext, RelativeSource={RelativeSource Self}}" />
+                </ContextMenu>
+            </Button.ContextMenu>
+            <StackPanel Orientation="Vertical">
+                <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Margin="3" Text="{Binding Name}" />
+                <Image HorizontalAlignment="Center" Width="30" Height="30" Source="{Binding Icon}" />
+            </StackPanel>
+        </Button>
+    </DataTemplate>
+</ResourceDictionary>
