@@ -7,11 +7,11 @@ using System.Linq;
 using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
-using System.Threading;
 using System.Windows.Input;
 using Avalonia.Data.Converters;
 using Avalonia.Media;
 using Avalonia.Threading;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using DynamicData;
 using DynamicData.Binding;
@@ -58,7 +58,8 @@ public partial class MainWindowViewModel : ViewModelBase
 
     public ReadOnlyObservableCollection<ValidatorViewModel> Validators => _validatorViewModels;
     
-    public IEnumerable<EpochPercentageViewModel> EpochPercentageViewModels { get; private set; } = [];
+    [ObservableProperty]
+    public IEnumerable<EpochPercentageViewModel> epochPercentageViewModels;
 
     public ICommand UpdateData => new UpdateDataCommand();
 
@@ -102,8 +103,10 @@ public partial class MainWindowViewModel : ViewModelBase
             OnPropertyChanged(nameof(EpochPercentageViewModels));
         });
     }
+
+    [ObservableProperty]
+    private ValidatorViewModel? selectedValidator;
     
-    public ValidatorViewModel SelectedValidator { get; private set; }
 
     [RelayCommand]
     public void ShowSettingsDialog()
@@ -116,7 +119,6 @@ public partial class MainWindowViewModel : ViewModelBase
         if (sender is ValidatorViewModel vm)
         {
             SelectedValidator = vm;
-            OnPropertyChanged(nameof(SelectedValidator));
         }
     }
 }
