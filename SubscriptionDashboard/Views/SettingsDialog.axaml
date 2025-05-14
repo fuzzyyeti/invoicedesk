@@ -26,7 +26,7 @@
         </Grid>
         <StackPanel DockPanel.Dock="Bottom" VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal">
             <Button Margin="5" Command="{Binding CloseCommand}">Cancel</Button>
-            <Button Margin="5" Command="{Binding UpdateConfiuration}">Apply</Button>
+            <Button Margin="5" Command="{Binding UpdateConfiguration}">Apply</Button>
         </StackPanel>
     </DockPanel>
 </Window>

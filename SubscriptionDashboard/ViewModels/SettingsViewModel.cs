@@ -1,10 +1,11 @@
 using System;
 using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
 using SubscriptionDashboard.Services;
 
 namespace SubscriptionDashboard.ViewModels;
 
-public class SettingsViewModel
+public partial class SettingsViewModel
 {
     private readonly Settings? _settings = ConfigurationService.Instance?.Configuration;
 
@@ -32,11 +33,14 @@ public class SettingsViewModel
         }
     }
 
-    public ICommand UpdateConfiuration => new RelayCommand(UpdateJsonFile);
+    [RelayCommand]
+    public void CloseCommand()
+    {
+        CloseAction?.Invoke();
+    }
 
-    public ICommand CloseCommand => new RelayCommand(CloseAction!);
-
-    private void UpdateJsonFile()
+    [RelayCommand]
+    public void UpdateConfiguration()
     {
         if (_settings != null)
         {

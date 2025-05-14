@@ -12,6 +12,7 @@ using System.Windows.Input;
 using Avalonia.Data.Converters;
 using Avalonia.Media;
 using Avalonia.Threading;
+using CommunityToolkit.Mvvm.Input;
 using DynamicData;
 using DynamicData.Binding;
 using SubscriptionDashboard.Services;
@@ -103,11 +104,12 @@ public partial class MainWindowViewModel : ViewModelBase
     }
     
     public ValidatorViewModel SelectedValidator { get; private set; }
-    
-    public RelayCommand ShowSettingsDialog { get; } = new (() =>
+
+    [RelayCommand]
+    public void ShowSettingsDialog()
     {
         DialogService.Instance?.ShowDialog(() => new SettingsDialog());
-    });
+    }
 
     private void VmOnSelected(object? sender, EventArgs e)
     {

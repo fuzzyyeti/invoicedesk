@@ -10,12 +10,13 @@ using Avalonia.Input;
 using Avalonia.Media;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
+using CommunityToolkit.Mvvm.Input;
 using SubscriptionDashboard.Models;
 using SubscriptionDashboard.Services;
 
 namespace SubscriptionDashboard.ViewModels;
 
-public class ValidatorViewModel : ViewModelBase
+public partial class ValidatorViewModel : ViewModelBase
 {
 
     private readonly Validator _validator;
@@ -24,7 +25,6 @@ public class ValidatorViewModel : ViewModelBase
     public ValidatorViewModel(Validator validator)
     {
         _validator = validator;
-        SelectCommand = new RelayCommand(OnSelect);
         ShortKey = new string(_validator.VoteKey.AsSpan()[..4]) + "..." + new string(_validator.VoteKey.AsSpan()[^4..]);
         if (DataFetcher.Instance?.ValidatorInfos.TryGetValue(_validator.VoteKey, out var voteInfo) == true
             && voteInfo is { Name: { } name })
@@ -75,13 +75,12 @@ public class ValidatorViewModel : ViewModelBase
         }
     }
     
-    private void OnSelect()
+    [RelayCommand]
+    public void SelectCommand()
     {
         Selected?.Invoke(this, EventArgs.Empty);
         OnPropertyChanged(nameof(Name));
     }
-    
-    public RelayCommand SelectCommand { get; }
 
     public event EventHandler<EventArgs>? Selected;
     
@@ -110,9 +109,8 @@ public class ValidatorViewModel : ViewModelBase
     
     public CopyVoteKey CopyVoteKey => new();
     
-    public RelayCommand<string> CopyCommand => new (OnCopy);
-    
-    private void OnCopy(string  copyText)
+    [RelayCommand] 
+    public void CopyCommand(string  copyText)
     {
         Task.Run(async () =>
         {
